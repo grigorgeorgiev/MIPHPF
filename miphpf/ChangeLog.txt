@@ -1,0 +1,107 @@
+2007-10-27 g_mirchev
+
+	* Renamed classes:
+		miWebFormField to miWidget
+		
+		miWebFormStandardField to miBaseWidget
+		miWebFormFieldCheckbox to miBaseCheckboxWidget
+		miWebFormFieldRadio to miBaseRadioWidget
+		miWebFormFieldSelect to miBaseSelectWidget
+		miWebFormFieldText to miBaseTextWidget
+		
+		miWebFormWidgetCheckbox to miCheckboxWidget
+		miWebFormWidgetRadio to miRadioWidget
+		miWebFormWidgetSelect to miSelectWidget
+		miWebFormWidgetText to miTextWidget
+		
+	* Renamed files:
+		WebFormField.inc to Widget.inc
+		WebFormStandardFields.inc to BaseWidgets.inc
+		WebFormStandardWidgets.inc to StandardWidgets.inc
+
+	* miWebForm->setFormFields() becomes miWebForm->initWidgets()
+
+	* miWebForm->getFieldObj() becomes miWebForm->getWidget()
+	
+	* Separated miDataManager into miDispatcher and miView
+	
+	* Removed miUIUtil::getCurrentDateTime()
+	
+	* Removed miView::redirectToList() and miView::getData()
+
+2007-10-28 g_mirchev
+	* Added validate(), validateOnInsert() and validateOnUpdate() to miDomainObject
+	
+	* Fixed list action
+	
+	* Added positional SQL params
+	
+	* Added reference to the controller in miView
+	
+	* Renamed classes:
+		miModelStrategy to miViewMapper
+		miModelStrategyDefault to miViewMapperDefault
+		miModel to miViewMapperController
+		miModelDefault to miViewMapperControllerDefault
+
+2007-11-01 g_mirchev
+	* Changed miTableMessage to miMessage
+
+	* miView now has a reference to the controller
+	
+	* miControllerPlugin is renamed to miViewPlugin
+
+2007-11-02 g_mirchev
+	* miAction uses view, not controller
+
+	* Renamed manager to control
+	
+	* Moved miPage into control
+	
+	* Updated comments
+	
+	* Fixed getController() to become getView() in view mapper controller
+
+2007-11-28 p_mishev
+	* Fixed bug in the email validator
+
+2008-05-08 g_mirchev
+	* Changed extensions from .inc to .php
+	
+	* Added getPKName(), getRow() and setRow() to miDomainObject
+	
+	* Added addValues() to miTemplateParserSectionInfo
+	
+	* Added clearActionHandlers() to miDispatcher
+	
+	* Added setDispatcher() to miPage
+	
+	* Added getTable() to miSqlRecordset
+	
+	* Added addWidget() to miWebForm
+	
+	* Check that miStaticDBUtil doesn't exist before requiring the file
+	
+	* Use full paths in Init.php
+	
+	* Added MSG_TYPE_HIDDEN to miMessage
+	
+	* Added getMessage() to miView
+	
+	* Added miAppFactory
+	
+	* Added miState, and changed the table, table features and the view to use it
+	
+	* Fixes in Actions.php
+	
+	* Fixed edit/create/view action to work even if there isn't a table
+	
+	* Refactoring and bug fix in miCsvExportAction
+	
+	* Fixed bug where the error messages were not HTML escaped
+	
+	* Changed getWebFormErrorsHandler() in miWebForm to be public
+	
+	* Strict mode fixes
+	
+	* miTemplateParser fix for missing subsections problem

@@ -1,0 +1,281 @@
+body {
+	margin: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	/* Internet Explorer specific styles */
+/*
+	scrollbar-face-color: #DEE3E7;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+*/
+}
+img {
+	border: 0px;
+}
+img.pointer {
+	width: 7px;
+	height: 7px;
+	padding: 0px 6px;
+	vertical-align: middle;
+}
+table {
+	font-size: 11px;
+}
+td {
+	vertical-align: top;
+}
+td.person {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #5E6266;
+	text-align: center;
+	vertical-align: middle;
+}
+td.navigation_item {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: center;
+}
+td.position {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000066;
+	vertical-align: middle;
+}
+h1 {
+	height: 25px;
+	font: normal 18px/25px Arial, Helvetica, sans-serif;
+	margin: 20px 0px;
+	color: #000066;
+}
+h2 {
+	height: 20px;
+	font: normal 15px/20px Arial, Helvetica, sans-serif;
+	margin: 20px 0px;
+	color: #000066;
+}
+p {
+	font-size: 11px;
+}
+p.error {
+	color: red;
+}
+p.warning {
+	color: #ffcc00;;
+}
+p.info {
+	color: green;
+}
+td.right {
+	background: url(/images/right.gif) no-repeat;
+}
+td.left {
+	background: url(/images/left.gif) no-repeat;
+}
+table.data_entry td {
+	vertical-align: middle;
+	height: 25px;
+	padding: 0px 5px;
+	font-size: 11px;
+	color: #5E6266;
+	background-color: #DFE4E9;
+	border: 1px solid white;
+}
+table.data {
+	background-color: white;
+	border: 2px #006699 solid;
+	color: #003399;
+}
+table.data th {
+	height: 25px;
+	padding: 0px 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+	background-color: #006699;
+	background: url('/images/pattern.gif');
+	border: 1px solid white;
+}
+table.data tr {
+	background: #E1EFFA;
+}
+table.data tr.green {
+	color: #009900;
+	background: #E1FAE1;
+}
+table.data tr.blue {
+	color: #000099;
+	background: #E1EFFA;
+}
+table.data tr.red {
+	color: #990000;
+	background: #FAE1E1;
+}
+table.data td {
+	vertical-align: middle;
+	height: 25px;
+	padding: 0px 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+td.center {
+	text-align: center;
+}
+hr {
+	width: 75%;
+	height: 2px;
+	background: #000066;
+}
+
+
+	/* Rows */
+	tr.row1 {
+		background-color: #EFEFEF;
+	}
+	tr.row2 {
+		background-color: #DEE3E7;
+	}
+	tr.row3 {
+		background-color: #D1D7DC;
+	}
+	/* Columns */
+	col.col1 {
+		background-color: #EFEFEF;
+	}
+	col.col2 {
+		background-color: #DEE3E7;
+	}
+	col.col3 {
+		background-color: #D1D7DC;
+	}
+	/* Cells */
+	td.cell1 {
+		background-color: #EFEFEF;
+	}
+	td.cell2 {
+		background-color: #DEE3E7;
+	}
+	td.cell3 {
+		background-color: #D1D7DC;
+	}
+	/* Links CSS selectors */
+	a:link {
+		text-decoration: none;
+		border: 0px;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+		/* Colors */
+		a.white {
+			color: white;
+		}
+		a.orange {
+			color: #ff6600;
+		}
+		a.navy {
+			color: #000066;
+		}
+		a.olive {
+			color: #008000;
+		}
+		a.red {
+			color: red;
+		}
+/* Widgets */
+	input, textarea, select {
+		font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+/* Strips */
+.strip_dark_gray {
+	background-color: #333;
+}
+.strip_gray {
+	background-color: #999;
+}
+.strip_white {
+	background-color: white;
+}
+
+/* Navigation section */
+	
+	/* Squares */
+	.square_deep_violet {
+		background-color: #99004c;
+	}
+	.square_dull_yellow {
+		background-color: #cc0;
+	}
+	.square_teal {
+		background-color: #3d9999;	
+	}
+	.square_fire_brick {
+		background-color: #900;
+	}
+	.square_olive {
+		background-color: #99993d;
+	}
+	.square_sky_blue {
+		background-color: #08c;
+	}
+	.square_sienna {
+		background-color: #994c00;
+	}
+	.square_olive_drab {
+		background-color: #690;
+	}
+	.square_dark_sky_blue {
+		background-color: #1f1f99;
+	}
+
+#quotes_logo {
+	margin: 0 auto;
+}
+
+p.headWarning {
+	color: red;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.red {
+	color: red;
+}
+
+table tr.yellow {
+	color: yellow;
+}
+
+table tr.orange {
+	color: orange;
+}
+
+table tr.green {
+	color: green;
+}
+
+table tr.darkblue {
+	color: darkblue;
+	
+}
+
+table tr.black {
+	color: black;
+}
+
+table tr.white {
+	color: white;
+	
+}
+
+table tr.orange {
+	color: orange;
+	
+}

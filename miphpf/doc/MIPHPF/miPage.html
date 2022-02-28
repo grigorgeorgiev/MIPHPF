@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class miPage</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class miPage</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Handles page control and display  There could be multiple views on one page</p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2006-2007 Mirchev Ideas Ltd. All rights reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_control---Page.php.html">/control/Page.php</a> (line <span class="field"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a15">15</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<span class="var-type"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>
+					<a href="#$_dispatcher" title="details" class="var-name">$_dispatcher</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_footerFileName" title="details" class="var-name">$_footerFileName</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_headerFileName" title="details" class="var-name">$_headerFileName</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_views" title="details" class="var-name">$_views</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																				
+												<div class="method-definition">
+											<span class="method-result">miPage</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"><a href="../MIPHPF/miView.html">miView</a>|array</span>&nbsp;<span class="var-name">$views</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#dispatchAndShow" title="details" class="method-name">dispatchAndShow</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>
+										<a href="#getDispatcher" title="details" class="method-name">getDispatcher</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#processControllerCommands" title="details" class="method-name">processControllerCommands</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$controllerCommands</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setDispatcher" title="details" class="method-name">setDispatcher</a>
+											(<span class="var-type"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>&nbsp;<span class="var-name">$dispatcher</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setFooter" title="details" class="method-name">setFooter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$footerFileName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHeader" title="details" class="method-name">setHeader</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$headerFileName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#showPage" title="details" class="method-name">showPage</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_dispatcher" id="$_dispatcher"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>
+			<span class="var-name">$_dispatcher</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a36">36</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The dispatcher object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_footerFileName" id="$_footerFileName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_footerFileName</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a29">29</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_headerFileName" id="$_headerFileName"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_headerFileName</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a24">24</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_views" id="$_views"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_views</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a19">19</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a44">44</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initializes the page object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">miPage</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miView.html">miView</a>|array</span>&nbsp;<span class="var-name">$views</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miView.html">miView</a>|array</span>
+				<span class="var-name">$views</span><span class="var-description">: view or array of views</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddispatchAndShow" id="dispatchAndShow"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">dispatchAndShow</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a129">129</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Dispatch an action and show a page with a one view</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			dispatchAndShow
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDispatcher" id="getDispatcher"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDispatcher</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a116">116</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the dispatcher object  Instantiates a miDefaultDispatcher object, if needed</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>
+		<span class="method-name">
+			getDispatcher
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodprocessControllerCommands" id="processControllerCommands"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">processControllerCommands</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a77">77</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Process the controller commands</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			processControllerCommands
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$controllerCommands</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$controllerCommands</span><span class="var-description">: array of controller command objects</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDispatcher" id="setDispatcher"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDispatcher</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a144">144</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Allows runtime changing of the dispatcher object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDispatcher
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>&nbsp;<span class="var-name">$dispatcher</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miDispatcher.html">miDispatcher</a></span>
+				<span class="var-name">$dispatcher</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFooter" id="setFooter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFooter</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a67">67</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the footer file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFooter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$footerFileName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$footerFileName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHeader" id="setHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHeader</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a57">57</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the header file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHeader
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$headerFileName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$headerFileName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowPage" id="showPage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">showPage</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__controlPage.php.html#a97">97</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Shows the page</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			showPage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 08 May 2008 16:57:30 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

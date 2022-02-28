@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class miWebForm</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class miWebForm</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Manages a web form</p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2006,2007 Mirchev Ideas Ltd. All rights reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_view---WebForm.php.html">/view/WebForm.php</a> (line <span class="field"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a15">15</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_errorsHandler" title="details" class="var-name">$_errorsHandler</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_formDataRow" title="details" class="var-name">$_formDataRow</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_formFields" title="details" class="var-name">$_formFields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_formProperties" title="details" class="var-name">$_formProperties</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_mainPageElements" title="details" class="var-name">$_mainPageElements</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_messageObj" title="details" class="var-name">$_messageObj</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_submittedData" title="details" class="var-name">$_submittedData</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_templateSectionInfos" title="details" class="var-name">$_templateSectionInfos</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_validators" title="details" class="var-name">$_validators</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">miWebForm</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$formDataRow</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$formData</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMainPageElements" title="details" class="method-name">addMainPageElements</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$mainPageElements</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addTemplateSectionInfo" title="details" class="method-name">addTemplateSectionInfo</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$templateSectionInfo</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addValidator" title="details" class="method-name">addValidator</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type"><a href="../MIPHPF/miValidator.html">miValidator</a></span>&nbsp;<span class="var-name">$validator</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addWidget" title="details" class="method-name">addWidget</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type"><a href="../MIPHPF/miBaseWidget.html">miBaseWidget</a></span>&nbsp;<span class="var-name">$widget</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getFormData" title="details" class="method-name">&amp;getFormData</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getFormDataRow" title="details" class="method-name">&amp;getFormDataRow</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../MIPHPF/miMessage.html">miMessage</a></span>
+										<a href="#getMessageObj" title="details" class="method-name">getMessageObj</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSubmittedData" title="details" class="method-name">getSubmittedData</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$fieldName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getSubmittedDataRow" title="details" class="method-name">getSubmittedDataRow</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../MIPHPF/miWebFormErrorsHandler.html">miWebFormErrorsHandler</a></span>
+										<a href="#getWebFormErrorsHandler" title="details" class="method-name">getWebFormErrorsHandler</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../MIPHPF/miWidget.html">miWidget</a>|null</span>
+										<a href="#getWidget" title="details" class="method-name">getWidget</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initWidgets" title="details" class="method-name">initWidgets</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$formProperties</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#onParse" title="details" class="method-name">onParse</a>
+											(<span class="var-type"><a href="../MIPHPF/miTemplateParser.html">miTemplateParser</a></span>&nbsp;<span class="var-name">&$templateParser</span>, <span class="var-type"><a href="../MIPHPF/miTemplateParser.html">miTemplateParser</a></span>&nbsp;<span class="var-name">$templateParser</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#parse" title="details" class="method-name">parse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$templateName</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isEditable</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#processSubmit" title="details" class="method-name">processSubmit</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#removeValidators" title="details" class="method-name">removeValidators</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setErrorsHandler" title="details" class="method-name">setErrorsHandler</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$errorsHandler</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setFormData" title="details" class="method-name">setFormData</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$formData</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setFormDataRow" title="details" class="method-name">setFormDataRow</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$formDataRow</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show" title="details" class="method-name">show</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$templateName</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isEditable</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_errorsHandler" id="$_errorsHandler"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_errorsHandler</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a64">64</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A reference to the error hanlder object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_formDataRow" id="$_formDataRow"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_formDataRow</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a59">59</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array with data to displayed by the widgets</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_formFields" id="$_formFields"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_formFields</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a32">32</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array with field objects</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_formProperties" id="$_formProperties"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_formProperties</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a24">24</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array that describes the output and input of each web field</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_mainPageElements" id="$_mainPageElements"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_mainPageElements</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_messageObj" id="$_messageObj"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_messageObj</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a74">74</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reference to the message object, or null</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_submittedData" id="$_submittedData"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_submittedData</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a51">51</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_templateSectionInfos" id="$_templateSectionInfos"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_templateSectionInfos</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a69">69</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template section infos to be added when parsing the template</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_validators" id="$_validators"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_validators</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The validators</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a82">82</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs the miWebForm</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">miWebForm</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$formDataRow</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$formData</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$formData</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$formDataRow</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMainPageElements" id="addMainPageElements"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMainPageElements</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a248">248</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMainPageElements
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$mainPageElements</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mainPageElements</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddTemplateSectionInfo" id="addTemplateSectionInfo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addTemplateSectionInfo</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a136">136</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds new template section info</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addTemplateSectionInfo
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$templateSectionInfo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$templateSectionInfo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddValidator" id="addValidator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addValidator</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a180">180</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a validator for a field</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addValidator
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type"><a href="../MIPHPF/miValidator.html">miValidator</a></span>&nbsp;<span class="var-name">$validator</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span>			</li>
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miValidator.html">miValidator</a></span>
+				<span class="var-name">$validator</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddWidget" id="addWidget"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addWidget</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a238">238</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds new form field object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addWidget
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type"><a href="../MIPHPF/miBaseWidget.html">miBaseWidget</a></span>&nbsp;<span class="var-name">$widget</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span>			</li>
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miBaseWidget.html">miBaseWidget</a></span>
+				<span class="var-name">$widget</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFormData" id="getFormData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFormData</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a128">128</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a form data value</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			&amp;getFormData
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFormDataRow" id="getFormDataRow"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFormDataRow</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a104">104</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the form data row</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			&amp;getFormDataRow
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMessageObj" id="getMessageObj"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMessageObj</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a294">294</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the message object  if $this-&gt;_messageObj is null creates new miMessage object</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the message object</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../MIPHPF/miMessage.html">miMessage</a></span>
+		<span class="method-name">
+			getMessageObj
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSubmittedData" id="getSubmittedData"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSubmittedData</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a395">395</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the submitted field value</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSubmittedData
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$fieldName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$fieldName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSubmittedDataRow" id="getSubmittedDataRow"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSubmittedDataRow</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a384">384</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the submitted data row</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getSubmittedDataRow
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetWebFormErrorsHandler" id="getWebFormErrorsHandler"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getWebFormErrorsHandler</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a328">328</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the web form errors handling object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../MIPHPF/miWebFormErrorsHandler.html">miWebFormErrorsHandler</a></span>
+		<span class="method-name">
+			getWebFormErrorsHandler
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetWidget" id="getWidget"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getWidget</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a222">222</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the widget</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> an object that is extends miWidget, or null if not found</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../MIPHPF/miWidget.html">miWidget</a>|null</span>
+		<span class="method-name">
+			getWidget
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: the name of the field whose widget to return</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinitWidgets" id="initWidgets"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">initWidgets</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a146">146</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the form fields</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initWidgets
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$formProperties</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$formProperties</span><span class="var-description">: the form properties array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodonParse" id="onParse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">onParse</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a318">318</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called just before the template is parsed  Subclasses can add custom functionality using this method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			onParse
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miTemplateParser.html">miTemplateParser</a></span>&nbsp;<span class="var-name">&$templateParser</span>, <span class="var-type"><a href="../MIPHPF/miTemplateParser.html">miTemplateParser</a></span>&nbsp;<span class="var-name">$templateParser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miTemplateParser.html">miTemplateParser</a></span>
+				<span class="var-name">$templateParser</span><span class="var-description">: the template parser</span>			</li>
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miTemplateParser.html">miTemplateParser</a></span>
+				<span class="var-name">&$templateParser</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse" id="parse"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">parse</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a260">260</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parses the form template</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the html for the form</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			parse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$templateName</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isEditable</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$templateName</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isEditable</span><span class="var-description">: if the form will contain the editable fields/widgets</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprocessSubmit" id="processSubmit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">processSubmit</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a345">345</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Process the form submission</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false if errors were found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			processSubmit
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodremoveValidators" id="removeValidators"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">removeValidators</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a206">206</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes all validators for a field</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			removeValidators
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetErrorsHandler" id="setErrorsHandler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setErrorsHandler</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a335">335</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setErrorsHandler
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$errorsHandler</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$errorsHandler</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFormData" id="setFormData"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFormData</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a116">116</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets form data</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFormData
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$formData</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$formData</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFormDataRow" id="setFormDataRow"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFormDataRow</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a93">93</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the form data row</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFormDataRow
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$formDataRow</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$formDataRow</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshow" id="show"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewWebForm.php.html#a307">307</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Shows the form</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$templateName</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$isEditable</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$templateName</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isEditable</span><span class="var-description">: if the form will contain the editable fields/widgets</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 08 May 2008 16:58:01 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

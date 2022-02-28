@@ -1,0 +1,135 @@
+<script>
+function confirmDelete(href)
+{
+if (window.confirm("Please confirm?")) {
+		  window.location.href = href;
+	}
+}
+</script>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td width="100%">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100%" height="21" background="../images/top.gif"></td>
+				</tr>
+			</table>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="5"class="left">
+						<table width="5" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="5"></td>
+							</tr>
+						</table>
+					</td>
+					<td width="100%">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="7" height="18">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+								<!-- Begin Position -->
+								<td width="100%" class="position">%%BREADCRUMBS%%</td>
+								<!-- End Position -->
+								<td width="7">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="7" height="1"></td>
+								<td width="100%" bgcolor="#C2C8CD"></td>
+								<td width="7"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<!-- Begin Content -->
+									<br>
+									<p class="%%MSG_TYPE_STYLE%%">%%MSG%%</p>
+									<form action="?">
+									<input type="button" value="New Contact" onClick="window.location.href='?action=dmCreate&%%RL_PARAMS%%'" class="button">
+									Records Per Page: %%HTML_RECORDSPERPAGE_DROPDOWN%% <input type="submit" value="Update">
+									<br><br>
+									<table class="data" cellspacing="2">
+										<tr>
+											<th nowrap>
+												<a href="javascript: sortForm(0, 'ContactID', 'DESC');"><img src="../images/pointer_down.gif" border="0"></a>
+												<a href="javascript: sortForm(0, 'ContactID', '%%CONTACTID_SORT_DIR%%');" class="white">ID</a>
+												<a href="javascript: sortForm(0, 'ContactID', 'ASC');"><img src="../images/pointer_up.gif" border="0"></a>
+											</th>
+											<th nowrap>
+												<a href="javascript: sortForm(0, 'ContactName', 'DESC');"><img src="../images/pointer_down.gif" border="0"></a>
+												<a href="javascript: sortForm(0, 'ContactName', '%%CONTACTNAME_SORT_DIR%%');" class="white">Contact Name</a>
+												<a href="javascript: sortForm(0, 'ContactName', 'ASC');"><img src="../images/pointer_up.gif" border="0"></a>
+											</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+										<mi:section name="rows">
+<tr class="row_even" onMouseOver="toNewColor(this, '#D4EAFA');" onMouseOut="toOldColor(this);" onDblClick="window.location.href='?action=dmEdit&ContactID=%%CONTACTID%%&%%ALL_PARAMS%%'">
+	<td align="center">%%CONTACTID%%</td>
+	<td>%%CONTACTNAME%%</td>
+	<td><a href="?action=dmEdit&ContactID=%%CONTACTID%%&%%ALL_PARAMS%%" class="olive">Edit</a></td>
+	<td><a href="javascript:confirmDelete('?action=dmExecDelete&ContactID=%%CONTACTID%%&%%ALL_PARAMS%%')" class="red">Delete</a></td>
+</tr>
+										</mi:section>
+										<mi:section name="norows">
+										<tr>
+											<td colspan="11">No contacts found.</td>
+										</tr>
+										</mi:section>
+										<tr>
+											<th colspan="4" align="center">Filter Contacts</th>
+										</tr>
+										<tr>
+											<td class="center">
+												<input type="text" name="ContactIDFilter" size="4" value="%%CONTACTID_FILTERVALUE%%">
+												<input type="hidden" name="ContactIDCondition" value="=">
+											</td>
+											<td class="center">
+												<input type="text" name="ContactNameFilter" value="%%CONTACTNAME_FILTERVALUE%%">
+												<input type="hidden" name="ContactNameCondition" value="substring">
+											</td>
+											<td colspan="2" rowspan="2"><input type="submit" value="Filter Contacts" class="button"></td>
+											
+										</tr>
+										<tr>
+											<td colspan="4">
+												Filter By Contact Method %%HTML_CONTACTPREFERREDMETHOD_FILTER%%
+											</td>
+										</tr>
+									</table>
+									<br>
+									<input type="button" onClick="document.getElementById('remove_filter').submit();" value="Remove All Filters" class="button">
+									<br><br>
+									<p>%%HTML_RECORDSET_NAVIGATOR%%</p>
+									</form>
+									<p><strong>%%RECORDSET_POSITION%%</strong></p>
+									<form action="?" name="remove_filter" id="remove_filter"></form><br>
+									<!-- End Content -->
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="15" class="right">
+			<table width="15" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="15"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

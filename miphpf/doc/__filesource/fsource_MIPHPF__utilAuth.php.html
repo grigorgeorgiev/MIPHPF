@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for Auth.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file Auth.php</h1>
+<p>Documentation is available at <a href="../MIPHPF/_util---Auth.php.html">Auth.php</a></p>
+<div class="src-code">
+<div class="src-code"><ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Authentication&nbsp;Functions</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Currently&nbsp;unused</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;Copyright&nbsp;(c)&nbsp;2003,&nbsp;2004&nbsp;Mirchev&nbsp;Ideas&nbsp;Ltd.&nbsp;All&nbsp;rights&nbsp;reserved.</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;MIPHPF</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a10"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a11"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-comm">/*</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;require_once('../include/miphpf/model/Users.php');</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;require_once('../include/miphpf/const/Consts.php');</span></div></li>
+<li><div class="src-line"><a name="a16"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Session&nbsp;Name</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;define('MI_SESSION_NAME',&nbsp;'MIPHPF_SESSION');</span></div></li>
+<li><div class="src-line"><a name="a19"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Check&nbsp;if&nbsp;the&nbsp;user&nbsp;is&nbsp;authorized</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;isAuthorized($section&nbsp;=&nbsp;0)</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;{</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mi_session_name(MI_SESSION_NAME);</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;session_start();</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!array_key_exists('UserID',&nbsp;$_SESSION))</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false;</span></div></li>
+<li><div class="src-line"><a name="a27"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$user&nbsp;=&nbsp;new&nbsp;ModelUser;</span></div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$user-&gt;readUser($_SESSION['UserID']);</span></div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;($user-&gt;getPrivilege()&nbsp;&gt;=&nbsp;$section)</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;true;</span></div></li>
+<li><div class="src-line"><a name="a32"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a33"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false;</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;}</span></div></li>
+<li><div class="src-line"><a name="a35"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;getSessionUserID()</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;{</span></div></li>
+<li><div class="src-line"><a name="a38"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$_SESSION['UserID'];</span></div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-comm">&nbsp;&nbsp;&nbsp;&nbsp;}</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-comm">*/</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-php">?&gt;</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 08 May 2008 16:57:08 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</body>
+</html>

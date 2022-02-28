@@ -1,0 +1,125 @@
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td width="100%">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100%" height="21" background="../images/top.gif"></td>
+				</tr>
+			</table>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="5"class="left">
+						<table width="5" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="5"></td>
+							</tr>
+						</table>
+					</td>
+					<td width="100%">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="7" height="18">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+								<!-- Begin Position -->
+								<td width="100%" class="position">%%BREADCRUMBS%%</td>
+								<!-- End Position -->
+								<td width="7">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="7" height="1"></td>
+								<td width="100%" bgcolor="#C2C8CD"></td>
+								<td width="7"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<!-- Begin Content -->
+									<br>
+									<p class="%%MSG_TYPE_STYLE%%">%%MSG%%</p>
+									<form action="?">
+									Records Per Page: %%RECORDSPERPAGE_DROPDOWN%% <input type="submit" value="Submit">
+									<br><br>
+									<table class="data" cellspacing="2">
+										<tr>
+											<th nowrap>
+												<a href="javascript: sortForm(0, 'ControlID', 'DESC');"><img src="../images/pointer_down.gif" border="0"></a>
+												<a href="javascript: sortForm(0, 'ControlID', '%%CONTROLID_SORT_DIR%%');" class="white">ID</a>
+												<a href="javascript: sortForm(0, 'ControlID', 'ASC');"><img src="../images/pointer_up.gif" border="0"></a>
+											</th>
+											<th nowrap>
+												<a href="javascript: sortForm(0, 'ControlTextField', 'DESC');"><img src="../images/pointer_down.gif" border="0"></a>
+												<a href="javascript: sortForm(0, 'ControlTextField', '%%CONTROLTEXTFIELD_SORT_DIR%%');" class="white">Control Text Field</a>
+												<a href="javascript: sortForm(0, 'ControlTextField', 'ASC');"><img src="../images/pointer_up.gif" border="0"></a>
+											</th>
+										</tr>
+										<mi:section name="rows">
+<tr class="row_even" onMouseOver="toNewColor(this, '#D4EAFA');" onMouseOut="toOldColor(this);" onDblClick="window.location.href='?action=dmEdit&ControlID=%%CONTROLID%%&%%ALL_PARAMS%%'">
+	<td align="center">%%CONTROLID%%</td>
+	<td>%%CONTROLTEXTFIELD%%</td>
+</tr>
+										</mi:section>
+										<mi:section name="norows">
+										<tr>
+											<td colspan="11">No records found.</td>
+										</tr>
+										</mi:section>
+										<tr>
+											<td class="center">
+											</td>
+											<td class="center">
+											</td>
+											<td colspan="5" rowspan="2"><input type="submit" value="Filter Contacts" class="button"></td>
+											
+										</tr>
+									</table>
+									Control ID:<br>
+									Equal Filter: <input type="text" name="ControlIDFilter[0]" size="4" value="%%CONTROLID_FILTERVALUE[0]%%"> <input type="hidden" name="ControlIDCondition[0]" value="="><br>
+									Not Equal Filter: <input type="text" name="ControlIDFilter[1]" size="4" value="%%CONTROLID_FILTERVALUE[1]%%"> <input type="hidden" name="ControlIDCondition[1]" value="!="><br>
+									Less Than Filter: <input type="text" name="ControlIDFilter[2]" size="4" value="%%CONTROLID_FILTERVALUE[2]%%"> <input type="hidden" name="ControlIDCondition[2]" value="<"><br>
+									Less Than Or Equal Filter: <input type="text" name="ControlIDFilter[3]" size="4" value="%%CONTROLID_FILTERVALUE[3]%%"> <input type="hidden" name="ControlIDCondition[3]" value="<="><br>
+									Bigger Than Filter: <input type="text" name="ControlIDFilter[4]" size="4" value="%%CONTROLID_FILTERVALUE[4]%%"> <input type="hidden" name="ControlIDCondition[4]" value=">"><br>
+									Bigger Than Or Equal Filter:  <input type="text" name="ControlIDFilter[5]" size="4" value="%%CONTROLID_FILTERVALUE[5]%%"> <input type="hidden" name="ControlIDCondition[5]" value=">="><br>
+									
+									<br>Control Text Field:<br>
+									Substring Filter: <input type="text" name="ControlTextFieldFilter[0]" size="4" value="%%CONTROLTEXTFIELD_FILTERVALUE[0]%%"> <input type="hidden" name="ControlTextFieldCondition[0]" value="substring"><br>
+									Starts Filter: <input type="text" name="ControlTextFieldFilter[1]" size="4" value="%%CONTROLTEXTFIELD_FILTERVALUE[1]%%"> <input type="hidden" name="ControlTextFieldCondition[1]" value="starts"><br>
+									Ends Filter: <input type="text" name="ControlTextFieldFilter[2]" size="4" value="%%CONTROLTEXTFIELD_FILTERVALUE[2]%%"> <input type="hidden" name="ControlTextFieldCondition[2]" value="ends"><br>
+									Regular Expression Filter: <input type="text" name="ControlTextFieldFilter[3]" size="4" value="%%CONTROLTEXTFIELD_FILTERVALUE[3]%%"> <input type="hidden" name="ControlTextFieldCondition[3]" value="regexp"><br>
+									
+									<br>In Filter: %%HTML_IN_FILTER%% <input type="hidden" name="ControlSelectFieldCondition[0]" value="in"><br>
+									Not In Filter: %%HTML_NOT_IN_FILTER%% <input type="hidden" name="ControlSelectFieldCondition[1]" value="notin"><br>
+									
+									<input type="button" onClick="document.getElementById('remove_filter').submit();" value="Remove All Filters" class="button">
+									<p>%%HTML_RECORDSET_NAVIGATOR%%</p>
+									</form>
+									<p><strong>%%RECORDSET_POSITION%%</strong></p>
+									<form action="?" name="remove_filter" id="remove_filter"></form><br>
+									<!-- End Content -->
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="15" class="right">
+			<table width="15" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="15"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

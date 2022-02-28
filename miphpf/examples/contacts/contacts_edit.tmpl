@@ -1,0 +1,108 @@
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<!-- Begin Navigation -->
+		%%NAVIGATION%%
+		<!-- End Navigation -->
+		<td width="100%">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100%" height="21" background="/images/top.gif"></td>
+				</tr>
+			</table>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="5"class="left">
+						<table width="5" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="5"></td>
+							</tr>
+						</table>
+					</td>
+					<td width="100%">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="7" height="18">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+								<!-- Begin Position -->
+								<td width="100%" class="position">%%BREADCRUMBS%%<img src="/images/pointer.gif" border="0" class="pointer">Edit Contact</td>
+								<!-- End Position -->
+								<td width="7">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="7" height="1"></td>
+								<td width="100%" bgcolor="#C2C8CD"></td>
+								<td width="7"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<!-- Begin Content -->
+									<h1>Edit Contact</h1>
+									<p><b><font color="red">%%ERRORS%%</font></b></p>
+									<form action="?%%ALL_PARAMS%%" method="post">
+									<table class="data_entry" cellspacing="0">
+										<tr>
+											<td width="200">Contact ID:</td>
+											<td>%%CONTACTID%%</td>
+										</tr>
+										<tr>
+											<td>Contact title:</td>
+											<td>
+												<input type="radio" name="ContactTitle" value="Mr" %%CONTACTTITLE_MR%% tabindex="1">Mr.
+												<input type="radio" name="ContactTitle" value="Miss" %%CONTACTTITLE_MISS%% tabindex="2">Miss.
+												<input type="radio" name="ContactTitle" value="Mrs" %%CONTACTTITLE_MRS%% tabindex="3">Mrs.
+												<input type="radio" name="ContactTitle" value="Ms" %%CONTACTTITLE_MS%% tabindex="4">Ms.
+											</td>
+										</tr>
+										<tr>
+											<td width="200">Contact Name:</td>
+											<td><input type="text" name="ContactName" value="%%CONTACTNAME%%" size="35" tabindex="5"></td>
+										</tr>
+										<tr>
+											<td>Contact subscription:</td>
+											<td><input type="checkbox" name="ContactSubscription" %%CONTACTSUBSCRIPTION%% tabindex="6"></td>
+										</tr>
+										<tr>
+											<td>Contact Preferred Method:</td>
+											<td>
+												<select name="ContactPreferredMethod">
+													%%CONTACTPREFERREDMETHOD%%
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2"><input type="submit" name="new" value="Update" class="button" tabindex="8"></td>
+										</tr>
+									</table>
+									<input type="hidden" name="action" value="dmExecEdit">
+									<input type="hidden" name="ContactID" value="%%CONTACTID%%">
+									</form>
+									<!-- End Content -->
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="15" class="right">
+			<table width="15" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="15"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

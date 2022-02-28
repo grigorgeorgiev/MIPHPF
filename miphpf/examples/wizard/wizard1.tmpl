@@ -1,0 +1,93 @@
+<script src="wizard.js"></script>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<!-- Begin Navigation -->
+		%%NAVIGATION%%
+		<!-- End Navigation -->
+		<td width="100%">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100%" height="21" background="/images/top.gif"></td>
+				</tr>
+			</table>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="5"class="left">
+						<table width="5" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="5"></td>
+							</tr>
+						</table>
+					</td>
+					<td width="100%">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="7" height="18">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+								<!-- Begin Position -->
+								<td width="100%" class="position">%%BREADCRUMBS%%<img src="/images/pointer.gif" border="0" class="pointer">Wizard Page 1</td>
+								<!-- End Position -->
+								<td width="7">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="7" height="1"></td>
+								<td width="100%" bgcolor="#C2C8CD"></td>
+								<td width="7"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<!-- Begin Content -->
+									<h1>Wizard Page %%CURRENT_WIZARD_PAGE%% of %%TOTAL_WIZARD_PAGES%%</h1>
+									<p><b><font color="red">%%ERRORS%%</font></b></p>
+									<form action="?" method="post">
+									<table class="data_entry" cellspacing="0">
+										<tr>
+											<td width="200">Contact Name:</td>
+											<td><input type="text" name="ContactName" value="%%CONTACTNAME%%" size="35" tabindex="5"></td>
+										</tr>
+										<tr>
+											<td width="200">Contact Title:</td>
+											<td><input type="text" name="ContactTitle" value="%%CONTACTTITLE%%" size="35" tabindex="5"></td>
+										</tr>
+										<tr>
+											<td colspan="2">
+<!--												<input type="button" name="new" value="Previous Page" onClick="previousPage(this);" class="button" tabindex="8"> -->
+												<input type="button" name="new" value="Next Page" onClick="nextPage(this);" class="button" tabindex="8">
+												<input type="button" name="new" value="Cancel Wizard" onClick="cancelWizard(this);" class="button" tabindex="8">
+											</td>
+										</tr>
+									</table>
+									<input type="hidden" name="action" value="miExecWizardPageAction">
+									<input type="hidden" name="currentWizardPage" value="%%CURRENT_WIZARD_PAGE%%">
+									<input type="hidden" name="wizardAction" value="">
+									</form>
+									<!-- End Content -->
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="15" class="right">
+			<table width="15" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="15"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

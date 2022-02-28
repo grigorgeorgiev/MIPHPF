@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class miSqlRecordset</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class miSqlRecordset</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Handle and manage the reading of data from database.</p>
+<p class="description"><p>This class only read data from a given database table with necessary  ordering and filtering.</p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2003-2006 Mirchev Ideas Ltd. All rights reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_model---SqlRecordset.php.html">/model/SqlRecordset.php</a> (line <span class="field"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a17">17</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_allFields" title="details" class="var-name">$_allFields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_filters" title="details" class="var-name">$_filters</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_firstRecordIndex" title="details" class="var-name">$_firstRecordIndex</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_groupBy" title="details" class="var-name">$_groupBy</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_havingFilterNames" title="details" class="var-name">$_havingFilterNames</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_joinConditions" title="details" class="var-name">$_joinConditions</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_numRecords" title="details" class="var-name">$_numRecords</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_selectedFields" title="details" class="var-name">$_selectedFields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_selectFields" title="details" class="var-name">$_selectFields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_sortBy" title="details" class="var-name">$_sortBy</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_sortDir" title="details" class="var-name">$_sortDir</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_table" title="details" class="var-name">$_table</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">miSqlRecordset</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addFilter" title="details" class="method-name">addFilter</a>
+											(<span class="var-type"><a href="../MIPHPF/miSqlFilter.html">miSqlFilter</a></span>&nbsp;<span class="var-name">$filter</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addFilters" title="details" class="method-name">addFilters</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$filters</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addJoinCondition" title="details" class="method-name">addJoinCondition</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$joinType</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$joinTable</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$joinCondition</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllFields" title="details" class="method-name">getAllFields</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllRecords" title="details" class="method-name">getAllRecords</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getGroupByClause" title="details" class="method-name">getGroupByClause</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getJoinConditionsClause" title="details" class="method-name">getJoinConditionsClause</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getRecords" title="details" class="method-name">getRecords</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getRecordsByIndex" title="details" class="method-name">getRecordsByIndex</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$fromIndex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$numRecords</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getRecordsCount" title="details" class="method-name">getRecordsCount</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getSelectedFields" title="details" class="method-name">getSelectedFields</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSelectQuery" title="details" class="method-name">getSelectQuery</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSqlFilterClause" title="details" class="method-name">getSqlFilterClause</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSqlFilterHavingClause" title="details" class="method-name">getSqlFilterHavingClause</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSqlLimitClause" title="details" class="method-name">getSqlLimitClause</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$fromIndex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$numRecords</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSqlOrderClause" title="details" class="method-name">getSqlOrderClause</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getTable" title="details" class="method-name">getTable</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getTablesClause" title="details" class="method-name">getTablesClause</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setGroupBy" title="details" class="method-name">setGroupBy</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$groupBy</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHavingFilterNames" title="details" class="method-name">setHavingFilterNames</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$filterNames</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setOrder" title="details" class="method-name">setOrder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sortBy</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sortDir</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setRecordsLimit" title="details" class="method-name">setRecordsLimit</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$from</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSelectFields" title="details" class="method-name">setSelectFields</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$selectFields</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$fields</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_allFields" id="$_allFields"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_allFields</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a63">63</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_filters" id="$_filters"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_filters</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a53">53</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_firstRecordIndex" id="$_firstRecordIndex"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_firstRecordIndex</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a28">28</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_groupBy" id="$_groupBy"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_groupBy</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a48">48</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_havingFilterNames" id="$_havingFilterNames"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_havingFilterNames</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a58">58</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_joinConditions" id="$_joinConditions"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_joinConditions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a78">78</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_numRecords" id="$_numRecords"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_numRecords</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a33">33</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_selectedFields" id="$_selectedFields"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_selectedFields</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a73">73</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_selectFields" id="$_selectFields"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_selectFields</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a68">68</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_sortBy" id="$_sortBy"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_sortBy</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a38">38</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_sortDir" id="$_sortDir"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_sortDir</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a43">43</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_table" id="$_table"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_table</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a23">23</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a97">97</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">miSqlRecordset constructor</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'firstTable'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'secondTable'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">miSqlRecordset</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$table</span><span class="var-description">: database table name, or several table names</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddFilter" id="addFilter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addFilter</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a162">162</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a filter object</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodaddFilter">addFilter</a><span class="src-sym">(</span><span class="src-var">$filter</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addFilter
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miSqlFilter.html">miSqlFilter</a></span>&nbsp;<span class="var-name">$filter</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$filter</span><span class="var-description">: a filter object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddFilters" id="addFilters"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addFilters</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a173">173</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds multiple filters</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addFilters
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$filters</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$filters</span><span class="var-description">: array of filter objects</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddJoinCondition" id="addJoinCondition"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addJoinCondition</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a109">109</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds join condition</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addJoinCondition
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$joinType</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$joinTable</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$joinCondition</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$joinType</span><span class="var-description">: the type of the join, eg. INNER, LEFT</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$joinTable</span><span class="var-description">: the table to be joined</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$joinCondition</span><span class="var-description">: the condition of the join</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAllFields" id="getAllFields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllFields</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a526">526</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns all fields of the recordset table(s)  The result of the function is cached. Call only after all join conditions have been added.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the field names</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllFields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAllRecords" id="getAllRecords"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllRecords</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a502">502</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read all records from the database table  The result is limited to the given filter clause and is returned in order  specify by order clause</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> rows returned from database</li>
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllRecords
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetGroupByClause" id="getGroupByClause"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGroupByClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a371">371</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the group by clause</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> sql clause</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getGroupByClause
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetJoinConditionsClause" id="getJoinConditionsClause"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getJoinConditionsClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a343">343</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the join conditions sql</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the join conditions sql</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getJoinConditionsClause
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRecords" id="getRecords"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRecords</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a455">455</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read rows from a database table.</p>
+<p class="description"><p>The result reply to the given filter clause and is returned in order  specify by order clause</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodsetOrder">setOrder</a><span class="src-sym">(</span><span class="src-var">$tableField</span><span class="src-sym">,&nbsp;</span><span class="src-str">'ASC'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodaddFilter">addFilter</a><span class="src-sym">(</span><span class="src-var">$filter</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$rows&nbsp;</span>=&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodgetRecords">getRecords</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> rows returned from database</li>
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getRecords
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRecordsByIndex" id="getRecordsByIndex"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRecordsByIndex</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a482">482</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read fixed number of rows from a given index in a database table.</p>
+<p class="description"><p>The result reply to the given filter clause and is returned in order  specify by order clause  If both $fromIndex and $numRecords are false returns all records</p><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodsetOrder">setOrder</a><span class="src-sym">(</span><span class="src-var">$tableField</span><span class="src-sym">,&nbsp;</span><span class="src-str">'ASC'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$rows&nbsp;</span>=&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodgetRecordsByIndex">getRecordsByIndex</a><span class="src-sym">(</span><span class="src-var">$fromIndex</span><span class="src-sym">,&nbsp;</span><span class="src-var">$numRecords</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> rows returned from database</li>
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getRecordsByIndex
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$fromIndex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$numRecords</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$fromIndex</span><span class="var-description">: from which record index to start</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numRecords</span><span class="var-description">: number of rows to be read</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRecordsCount" id="getRecordsCount"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRecordsCount</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a418">418</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the number of all rows in a database table that reply to the  given filter clause</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodaddFilter">addFilter</a><span class="src-sym">(</span><span class="src-var">$arrayFilter</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$count&nbsp;</span>=&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodgetRecordsCount">getRecordsCount</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> number of all rows in a database table</li>
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getRecordsCount
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSelectedFields" id="getSelectedFields"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSelectedFields</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a514">514</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the list of all selected fields  An empty array is returned of no query has been executed</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the selected field names</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getSelectedFields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSelectQuery" id="getSelectQuery"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSelectQuery</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a383">383</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the query to select all records for the recordset (without a LIMIT clause)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> sql clause</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSelectQuery
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSqlFilterClause" id="getSqlFilterClause"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSqlFilterClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a260">260</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return all the specified filter clauses as a string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> all the specified filter clauses as a string</li>
+				<li><span class="field">throws:</span> miConfigurationException</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSqlFilterClause
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSqlFilterHavingClause" id="getSqlFilterHavingClause"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSqlFilterHavingClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a301">301</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return all the specified HAVING filter clauses as a string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> all the specified HAVING filter clauses as a string</li>
+				<li><span class="field">throws:</span> miConfigurationException</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSqlFilterHavingClause
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSqlLimitClause" id="getSqlLimitClause"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSqlLimitClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a330">330</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the limit as a sql code</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the limit as a sql code</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSqlLimitClause
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$fromIndex</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$numRecords</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$fromIndex</span><span class="var-description">: from which record index to start</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numRecords</span><span class="var-description">: number of rows to be read</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSqlOrderClause" id="getSqlOrderClause"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSqlOrderClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a238">238</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the order clause</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodsetOrder">setOrder</a><span class="src-sym">(</span><span class="src-var">$tableField</span><span class="src-sym">,&nbsp;</span><span class="src-str">'ASC'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$order&nbsp;</span>=&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodgetSqlOrderClause">getSqlOrderClause</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> order clause</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSqlOrderClause
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTable" id="getTable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTable</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a547">547</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the table name for the current recordset</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getTable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTablesClause" id="getTablesClause"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTablesClause</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a358">358</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the table sql clause</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the table clause</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getTablesClause
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetGroupBy" id="setGroupBy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setGroupBy</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a143">143</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets group by fields  The param is directly added after the GROUP BY clause</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setGroupBy
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$groupBy</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$groupBy</span><span class="var-description">: the group by fields</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHavingFilterNames" id="setHavingFilterNames"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHavingFilterNames</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a184">184</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the names of the filters to be used in a HAVING clause instead of WHERE</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHavingFilterNames
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$filterNames</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$filterNames</span><span class="var-description">: array of filter names to be used in a HAVING clause instead of WHERE</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetOrder" id="setOrder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOrder</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a130">130</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the field by which the result of the query will be ordered and  the direction of ordering - ascending or descending.</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodsetOrder">setOrder</a><span class="src-sym">(</span><span class="src-var">$tableField</span><span class="src-sym">,&nbsp;</span><span class="src-str">'ASC'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setOrder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sortBy</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$sortDir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sortBy</span><span class="var-description">: database table field name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sortDir</span><span class="var-description">: direction of ordering - ascending or descending</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRecordsLimit" id="setRecordsLimit"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRecordsLimit</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a216">216</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets how many rows to be read from the databse</p>
+<p class="description"><p>Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miSqlRecordset.html#methodsetRecordsLimit">setRecordsLimit</a><span class="src-sym">(</span><span class="src-num">5</span><span class="src-sym">,&nbsp;</span><span class="src-num">20</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRecordsLimit
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$from</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$from</span><span class="var-description">: from which record index to start</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$num</span><span class="var-description">: how many rows to read</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSelectFields" id="setSelectFields"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSelectFields</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlRecordset.php.html#a196">196</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the select fields  Defaults to * (all columns)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSelectFields
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$selectFields</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$fields</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$fields</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$selectFields</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 08 May 2008 16:57:38 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

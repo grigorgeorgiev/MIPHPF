@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class miSqlComplexPKRecord</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class miSqlComplexPKRecord</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SQL Record managerment class for records with complex primary keys</p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2006 Mirchev Ideas Ltd. All rights reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_model---SqlComplexPKRecord.php.html">/model/SqlComplexPKRecord.php</a> (line <span class="field"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a20">20</a></span>)
+		</p>
+		
+				
+		<pre><a href="../MIPHPF/miSqlRecord.html">miSqlRecord</a>
+   |
+   --miSqlComplexPKRecord</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																				
+												<div class="method-definition">
+											<span class="method-result">miSqlComplexPKRecord</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$primaryKey</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#delete" title="details" class="method-name">delete</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getPKWhereSql" title="details" class="method-name">getPKWhereSql</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#insert" title="details" class="method-name">insert</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#readPK" title="details" class="method-name">readPK</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$values</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#update" title="details" class="method-name">update</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../MIPHPF/miSqlRecord.html">miSqlRecord</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../MIPHPF/miSqlRecord.html#var$_primaryKey">miSqlRecord::$_primaryKey</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../MIPHPF/miSqlRecord.html#var$_row">miSqlRecord::$_row</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../MIPHPF/miSqlRecord.html#var$_table">miSqlRecord::$_table</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a29">29</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates miSqlComplexPKRecord object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">miSqlComplexPKRecord</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$primaryKey</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: the table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$primaryKey</span><span class="var-description">: array of the primary key columns</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miSqlRecord.html#method__construct">miSqlRecord::__construct()</a></dt>
+						<dd>miSqlRecord constructor. It takes two parameters table name and  table primary key</dd>
+					</dl>
+			
+	</div>
+<a name="methoddelete" id="delete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a91">91</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete a record in the db table</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miSqlRecord.html#methoddelete">miSqlRecord::delete()</a></dt>
+						<dd>Delete a record in the db table</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetPKWhereSql" id="getPKWhereSql"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPKWhereSql</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a103">103</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the where sql clauses for selecting by primary key</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the sql code</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getPKWhereSql
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinsert" id="insert"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a58">58</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Inserts the record into the db</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			insert
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miSqlRecord.html#methodinsert">miSqlRecord::insert()</a></dt>
+						<dd>Insert a record in the db table  It also updates the the PK value of the inserted row</dd>
+					</dl>
+			
+	</div>
+<a name="methodreadPK" id="readPK"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">readPK</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a40">40</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reads the record from the db by primary key</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			readPK
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$values</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$values</span><span class="var-description">: an associative array with the values of each of the primary key columns</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miSqlRecord.html#methodreadPK">miSqlRecord::readPK()</a></dt>
+						<dd>Read a record using the specified primary key value</dd>
+					</dl>
+			
+	</div>
+<a name="methodupdate" id="update"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">update</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__modelSqlComplexPKRecord.php.html#a70">70</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates the record in the db</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> miDBException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			update
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miSqlRecord.html#methodupdate">miSqlRecord::update()</a></dt>
+						<dd>Update a record in the db table</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../MIPHPF/miSqlRecord.html">miSqlRecord</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#method__construct">miSqlRecord::__construct()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methoddelete">miSqlRecord::delete()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodget">miSqlRecord::get()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodgetPK">miSqlRecord::getPK()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodgetPrimaryKeyColumn">miSqlRecord::getPrimaryKeyColumn()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodgetRow">miSqlRecord::getRow()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodgetTableName">miSqlRecord::getTableName()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodinsert">miSqlRecord::insert()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodread">miSqlRecord::read()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodreadPK">miSqlRecord::readPK()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodset">miSqlRecord::set()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodsetRow">miSqlRecord::setRow()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miSqlRecord.html#methodupdate">miSqlRecord::update()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 08 May 2008 16:57:32 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

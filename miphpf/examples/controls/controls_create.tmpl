@@ -1,0 +1,123 @@
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<!-- Begin Navigation -->
+		%%NAVIGATION%%
+		<!-- End Navigation -->
+		<td width="100%">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="100%" height="21" background="/images/top.gif"></td>
+				</tr>
+			</table>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="5"class="left">
+						<table width="5" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="5"></td>
+							</tr>
+						</table>
+					</td>
+					<td width="100%">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="7" height="18">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+								<!-- Begin Position -->
+								<td width="100%" class="position">%%BREADCRUMBS%%<img src="/images/pointer.gif" border="0" class="pointer">New Contact</td>
+								<!-- End Position -->
+								<td width="7">
+									<table width="7" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td width="7"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="7" height="1"></td>
+								<td width="100%" bgcolor="#C2C8CD"></td>
+								<td width="7"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<!-- Begin Content -->
+									<h1>New Contact</h1>
+									<p><b><font color="red">%%ERRORS%%</font></b></p>
+									<form action="?%%ALL_PARAMS%%" method="post" enctype="multipart/form-data">
+									<table class="data_entry" cellspacing="0">
+										<tr>
+											<td width="200">Control Text Field:</td>
+											<td><input type="text" name="ControlTextField" value="%%CONTROLTEXTFIELD%%" size="35" tabindex="5"></td>
+										</tr>
+										<tr>
+											<td>Control radio field:</td>
+											<td>
+												<input type="radio" name="ControlRadioField" value="0" %%CONTROLRADIOFIELD_0%% tabindex="1">Mr.
+												<input type="radio" name="ControlRadioField" value="1" %%CONTROLRADIOFIELD_1%% tabindex="2">Miss.
+												<input type="radio" name="ControlRadioField" value="2" %%CONTROLRADIOFIELD_2%% tabindex="3">Mrs.
+												<input type="radio" name="ControlRadioField" value="3" %%CONTROLRADIOFIELD_3%% tabindex="4">Ms.
+											</td>
+										</tr>
+										<tr>
+											<td>Control checkbox field:</td>
+											<td><input type="checkbox" name="ControlCheckboxField" %%CONTROLCHECKBOXFIELD%% tabindex="6"></td>
+										</tr>
+										<tr>
+											<td>Control select field:</td>
+											<td>
+												<select name="ControlSelectField">
+													%%CONTROLSELECTFIELD%%
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td width="200">Control text widget:</td>
+											<td>%%CONTROLTEXTWIDGET%%</td>
+										</tr>
+										<tr>
+											<td>Control radio widget:</td>
+											<td>%%CONTROLRADIOWIDGET%%</td>
+										</tr>
+										<tr>
+											<td>Control checkbox widget:</td>
+											<td>%%CONTROLCHECKBOXWIDGET%%</td>
+										</tr>
+										<tr>
+											<td>Control select widget:</td>
+											<td>%%CONTROLSELECTWIDGET%%</td>
+										</tr>
+										<tr>
+											<td>Submit field - SubmitFieldPlugin:</td>
+											<td><input type="file" name="SubmitField"></td>
+										</tr>
+										<tr>
+											<td colspan="2"><input type="submit" name="new" value="Create" class="button" tabindex="20"></td>
+										</tr>
+									</table>
+									<input type="hidden" name="action" value="dmExecCreate">
+									</form>
+									<!-- End Content -->
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="15" class="right">
+			<table width="15" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="15"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

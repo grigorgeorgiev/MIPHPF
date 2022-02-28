@@ -1,0 +1,31 @@
+<h1>Template parser example</h1>
+
+Test 1: A section that will be displayed:<br/>
+<mi:section name="test1">
+Test section 1 - visible - %%VAR1%%<br/>
+</mi:section>
+
+
+<br/>Test 2: A section that will be skipped<br/>
+<mi:section name="test2">
+Test section 2 - invisible
+</mi:section>
+
+<br/>Test 3: A section that will be displated 3 times<br/>
+<mi:section name="test3">
+Test section 3 - repeated 3 times
+%%VAR1%% - %%VAR2%%<br/>
+</mi:section>
+
+<br/>Test 4: A section that has subsections<br/>
+
+<mi:section name="test4">
+Test section 4: <mi:section name="subtest4a">sub section - %%SUBSECTION_VAR%%;</mi:section>
+<mi:section name="subtest4b">second sub section</mi:section><br/>
+</mi:section>
+
+<br/>Test 5: A section that has subsection.
+Main section will be listed 3 times, and the subsection will be listed 2, 4, 3 times depending on the parent section.<br/>
+<mi:section name="test5">
+Iteration %%ITERNO%%: <mi:section name="test5sub">subsection %%VAR%% </mi:section><br/>
+</mi:section>

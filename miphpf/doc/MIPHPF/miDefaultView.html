@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class miDefaultView</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class miDefaultView</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Handles the presentation tier</p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2003-2007 Mirchev Ideas Ltd. All rights reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_view---View.php.html">/view/View.php</a> (line <span class="field"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a73">73</a></span>)
+		</p>
+		
+				
+		<pre><a href="../MIPHPF/miView.html">miView</a>
+   |
+   --miDefaultView</pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TEMPLATE_ID_CREATE" title="details" class="const-name">TEMPLATE_ID_CREATE</a> = 					<span class="var-type"> 'create'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TEMPLATE_ID_EDIT" title="details" class="const-name">TEMPLATE_ID_EDIT</a> = 					<span class="var-type"> 'edit'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TEMPLATE_ID_LIST" title="details" class="const-name">TEMPLATE_ID_LIST</a> = 					<span class="var-type"> 'list'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TEMPLATE_ID_VIEW" title="details" class="const-name">TEMPLATE_ID_VIEW</a> = 					<span class="var-type"> 'view'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_dataFields" title="details" class="var-name">$_dataFields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_defaultFilterValues" title="details" class="var-name">$_defaultFilterValues</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_domainObject" title="details" class="var-name">$_domainObject</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_mainPageElements" title="details" class="var-name">$_mainPageElements</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_persistVars" title="details" class="var-name">$_persistVars</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_plugins" title="details" class="var-name">$_plugins</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">SQLRecord</span>
+					<a href="#$_record" title="details" class="var-name">$_record</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_recordset" title="details" class="var-name">$_recordset</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_submitFields" title="details" class="var-name">$_submitFields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>
+					<a href="#$_table" title="details" class="var-name">$_table</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_templates" title="details" class="var-name">$_templates</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_viewMapperController" title="details" class="var-name">$_viewMapperController</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">miDefaultView</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$recordset</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMainPageElements" title="details" class="method-name">addMainPageElements</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$mainPageElements</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addRedirectToListControllerCommand" title="details" class="method-name">addRedirectToListControllerCommand</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$msgType</span> = <span class="var-default">miMessage::MSG_TYPE_ERROR</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addTableFeatures" title="details" class="method-name">addTableFeatures</a>
+											(<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#callPlugin" title="details" class="method-name">callPlugin</a>
+											(<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>&nbsp;<span class="var-name">$actionObj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$actionStep</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#createDomainObject" title="details" class="method-name">createDomainObject</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#createViewMapperController" title="details" class="method-name">createViewMapperController</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getDataFields" title="details" class="method-name">getDataFields</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getDomainObject" title="details" class="method-name">getDomainObject</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getMainPageElements" title="details" class="method-name">getMainPageElements</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getMessage" title="details" class="method-name">getMessage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$msgCode</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object Object</span>
+										<a href="#getRecord" title="details" class="method-name">&amp;getRecord</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getRecordset" title="details" class="method-name">getRecordset</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getRedirectParams" title="details" class="method-name">getRedirectParams</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$msgType</span> = <span class="var-default">miMessage::MSG_TYPE_ERROR</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object Object</span>
+										<a href="#getTable" title="details" class="method-name">getTable</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#getTableFilterObj" title="details" class="method-name">&amp;getTableFilterObj</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#getTablePagerObj" title="details" class="method-name">&amp;getTablePagerObj</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getTemplateFileName" title="details" class="method-name">getTemplateFileName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$templateId</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getViewMapperController" title="details" class="method-name">getViewMapperController</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initTable" title="details" class="method-name">initTable</a>
+											(<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initViewMapperController" title="details" class="method-name">initViewMapperController</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$viewMapperController</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initWebForm" title="details" class="method-name">initWebForm</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$form</span>, <span class="var-type"><a href="../MIPHPF/miWebForm.html">miWebForm</a></span>&nbsp;<span class="var-name">$form</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#postProcess" title="details" class="method-name">postProcess</a>
+											(<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>&nbsp;<span class="var-name">$actionObj</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$actionResult</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#preProcess" title="details" class="method-name">preProcess</a>
+											(<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>&nbsp;<span class="var-name">$actionObj</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#registerPlugin" title="details" class="method-name">registerPlugin</a>
+											(<span class="var-type"><a href="../MIPHPF/miViewPlugin.html">miViewPlugin</a></span>&nbsp;<span class="var-name">$plugin</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setDataFields" title="details" class="method-name">setDataFields</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$u</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMainPageElements" title="details" class="method-name">setMainPageElements</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$mainPageElements</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setRecord" title="details" class="method-name">setRecord</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$u</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTable" title="details" class="method-name">setTable</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$u</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_dataFields" id="$_dataFields"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_dataFields</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a120">120</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array that describes the output and input of each database field</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_defaultFilterValues" id="$_defaultFilterValues"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_defaultFilterValues</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a142">142</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The default filter values</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_domainObject" id="$_domainObject"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_domainObject</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a104">104</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reference to the domain object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_mainPageElements" id="$_mainPageElements"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_mainPageElements</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a135">135</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores page specific elements</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_persistVars" id="$_persistVars"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_persistVars</span>
+			 = <span class="var-default">array('sortBy', 'sortDir', 'page', 'recordsPerPage')</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a154">154</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_plugins" id="$_plugins"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_plugins</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a152">152</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Plugin objects</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_record" id="$_record"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">SQLRecord</span>
+			<span class="var-name">$_record</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a94">94</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Object of class miSQLRecord or its subclasses</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_recordset" id="$_recordset"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_recordset</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a147">147</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_submitFields" id="$_submitFields"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_submitFields</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a128">128</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array that describes the output and input of each field of type FILE</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_table" id="$_table"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>
+			<span class="var-name">$_table</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a112">112</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Object of class miTable or its subclasses</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_templates" id="$_templates"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_templates</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a86">86</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">An array of template names needed to visualize all viewes</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_viewMapperController" id="$_viewMapperController"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_viewMapperController</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a99">99</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reference to the view mapper controller object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../MIPHPF/miView.html">miView</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../MIPHPF/miView.html#var$_controller">miView::$_controller</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../MIPHPF/miView.html#var$_controllerCommands">miView::$_controllerCommands</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a159">159</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	
+	<div class="method-signature">
+		<span class="method-result">miDefaultView</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$recordset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$recordset</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMainPageElements" id="addMainPageElements"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMainPageElements</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a381">381</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds main page elements</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMainPageElements
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$mainPageElements</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$mainPageElements</span><span class="var-description">: array with the main page elements</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddRedirectToListControllerCommand" id="addRedirectToListControllerCommand"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addRedirectToListControllerCommand</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a417">417</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds redirect to list controller command  Used after dmExecCreate, dmExecEdit and dmExecDelete to prevent refreshing  the page to cause repetition of the operation</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addRedirectToListControllerCommand
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$msgType</span> = <span class="var-default">miMessage::MSG_TYPE_ERROR</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msg</span><span class="var-description">: message to display on the list page</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$msgType</span><span class="var-description">: the type of the message (optional)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddTableFeatures" id="addTableFeatures"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addTableFeatures</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a221">221</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds additional table features</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addTableFeatures
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcallPlugin" id="callPlugin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">callPlugin</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a452">452</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Calls each of the plugins passing the $actionObj and the $actionStep</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			callPlugin
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>&nbsp;<span class="var-name">$actionObj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$actionStep</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>
+				<span class="var-name">$actionObj</span><span class="var-description">: action object subclassed from miAction</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$actionStep</span><span class="var-description">: the particular action step</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateDomainObject" id="createDomainObject"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createDomainObject</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a271">271</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			createDomainObject
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcreateViewMapperController" id="createViewMapperController"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createViewMapperController</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a285">285</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			createViewMapperController
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDataFields" id="getDataFields"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDataFields</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a307">307</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return array that describes the output and input of each database field</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> that describes the output and input of each database field</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getDataFields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDomainObject" id="getDomainObject"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDomainObject</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a264">264</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getDomainObject
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMainPageElements" id="getMainPageElements"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMainPageElements</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a392">392</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the main page elements</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getMainPageElements
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMessage" id="getMessage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMessage</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a551">551</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns message based on code</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the message</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMessage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$msgCode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msgCode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRecord" id="getRecord"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRecord</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a236">236</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return Object of class miSqlRecord or its subclasses  which was set by setRecord method</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of class miSqlRecord or its subclasses</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object Object</span>
+		<span class="method-name">
+			&amp;getRecord
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRecordset" id="getRecordset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRecordset</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a296">296</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the recordset</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getRecordset
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRedirectParams" id="getRedirectParams"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRedirectParams</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a432">432</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the redirect params</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the redirect params url string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getRedirectParams
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$msgType</span> = <span class="var-default">miMessage::MSG_TYPE_ERROR</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msg</span><span class="var-description">: message to display on the list page</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$msgType</span><span class="var-description">: the type of the message (optional)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetTable" id="getTable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTable</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a332">332</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return object of class miTable or its subclasses  which was set by setTable method</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of class miTable or its subclasses</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object Object</span>
+		<span class="method-name">
+			getTable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTableFilterObj" id="getTableFilterObj"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTableFilterObj</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a197">197</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the table filter object. Singleton pattern</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			&amp;getTableFilterObj
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTablePagerObj" id="getTablePagerObj"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTablePagerObj</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a183">183</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the table pager object. Singleton pattern</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			&amp;getTablePagerObj
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTemplateFileName" id="getTemplateFileName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTemplateFileName</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a521">521</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the template file for the $templateId</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the template file name relative to the document root</li>
+				<li><span class="field">throws:</span> miConfigurationException</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getTemplateFileName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$templateId</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$templateId</span><span class="var-description">: the id of the template</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetViewMapperController" id="getViewMapperController"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getViewMapperController</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a276">276</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getViewMapperController
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinitTable" id="initTable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">initTable</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a490">490</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subclasses can init the table</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initTable
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miTable.html">miTable</a></span>
+				<span class="var-name">$table</span><span class="var-description">: reference to the table object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinitViewMapperController" id="initViewMapperController"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">initViewMapperController</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a509">509</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Inits the view mapper controller</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initViewMapperController
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$viewMapperController</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$viewMapperController</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinitWebForm" id="initWebForm"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">initWebForm</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a501">501</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Inits the web form</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initWebForm
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$form</span>, <span class="var-type"><a href="../MIPHPF/miWebForm.html">miWebForm</a></span>&nbsp;<span class="var-name">$form</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miWebForm.html">miWebForm</a></span>
+				<span class="var-name">$form</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$form</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpostProcess" id="postProcess"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">postProcess</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a479">479</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called after the action is executed  Subclasses can add functionlity to be executed after the action</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			postProcess
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>&nbsp;<span class="var-name">$actionObj</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$actionResult</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>
+				<span class="var-name">$actionObj</span><span class="var-description">: action object, extended from miAction</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$actionResult</span><span class="var-description">: the result of the action command</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miView.html#methodpostProcess">miView::postProcess()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodpreProcess" id="preProcess"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">preProcess</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a465">465</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called before the action is executed  Subclasses can add functionlity to be executed before the action</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			preProcess
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>&nbsp;<span class="var-name">$actionObj</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miAction.html">miAction</a></span>
+				<span class="var-name">$actionObj</span><span class="var-description">: action object, extended from miAction</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../MIPHPF/miView.html#methodpreProcess">miView::preProcess()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodregisterPlugin" id="registerPlugin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">registerPlugin</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a403">403</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Registers new plugin</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			registerPlugin
+		</span>
+					(<span class="var-type"><a href="../MIPHPF/miViewPlugin.html">miViewPlugin</a></span>&nbsp;<span class="var-name">$plugin</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../MIPHPF/miViewPlugin.html">miViewPlugin</a></span>
+				<span class="var-name">$plugin</span><span class="var-description">: the plugin to register</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDataFields" id="setDataFields"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDataFields</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a319">319</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets array that describes the output and input of each database field</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDataFields
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$u</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$u</span><span class="var-description">: Array that describes the output and input of each database field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMainPageElements" id="setMainPageElements"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMainPageElements</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a369">369</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets main page elements</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMainPageElements
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$mainPageElements</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$mainPageElements</span><span class="var-description">: array with the main page elements</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRecord" id="setRecord"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRecord</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a259">259</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets object of class miSqlRecord or its subclasses.</p>
+<p class="description"><p>miSqlRecord object is needed to handle and manage the inserting,  updating, deleting and reading of data into the database table specified  by the &quot;tableName&quot; in miSqlRecord constructor. The database table primary  key is also needed in miSqlRecord constructor.  Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$view&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miView.html">miView</a></span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$view</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miDefaultView.html#methodsetRecord">setRecord</a><span class="src-sym">(</span><span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecord.html">miSqlRecord</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'tablePrimaryKey'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRecord
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$u</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$u</span><span class="var-description">: Object of class miSqlRecord or its subclasses</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTable" id="setTable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTable</span> (line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a357">357</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets Object of class miTable or its subclasses.</p>
+<p class="description"><p>miTable object is needed to manage the representation in table format of data,  which is readed from miSqlRecordset object set in miTable constructor.  The data is readed from table specified by the &quot;tableName&quot; in the miSqlRecordset  constructor.  Example:  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$view&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miView.html">miView</a></span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$recordset&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miSqlRecordset.html">miSqlRecordset</a></span><span class="src-sym">(</span><span class="src-str">'tableName'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$view</span><span class="src-sym">-&gt;</span><a href="../MIPHPF/miDefaultView.html#methodsetTable">setTable</a><span class="src-sym">(</span><span class="src-key">new&nbsp;</span><span class="src-id"><a href="../MIPHPF/miTable.html">miTable</a></span><span class="src-sym">(</span><span class="src-var">$recordset</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTable
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$u</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$u</span><span class="var-description">: Object of class miTable or its subclasses</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../MIPHPF/miView.html">miView</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../MIPHPF/miView.html#methodaddControllerCommand">miView::addControllerCommand()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miView.html#methodgetController">miView::getController()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miView.html#methodgetControllerCommands">miView::getControllerCommands()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miView.html#methodpostProcess">miView::postProcess()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miView.html#methodpreProcess">miView::preProcess()</a></span><br>
+													<span class="method-name"><a href="../MIPHPF/miView.html#methodsetController">miView::setController()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constTEMPLATE_ID_CREATE" id="TEMPLATE_ID_CREATE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TEMPLATE_ID_CREATE</span>
+			 = <span class="const-default"> 'create'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a74">74</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTEMPLATE_ID_EDIT" id="TEMPLATE_ID_EDIT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TEMPLATE_ID_EDIT</span>
+			 = <span class="const-default"> 'edit'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a75">75</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTEMPLATE_ID_LIST" id="TEMPLATE_ID_LIST"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TEMPLATE_ID_LIST</span>
+			 = <span class="const-default"> 'list'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a77">77</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTEMPLATE_ID_VIEW" id="TEMPLATE_ID_VIEW"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TEMPLATE_ID_VIEW</span>
+			 = <span class="const-default"> 'view'</span>
+			(line <span class="line-number"><a href="../__filesource/fsource_MIPHPF__viewView.php.html#a76">76</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 08 May 2008 16:57:56 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>
