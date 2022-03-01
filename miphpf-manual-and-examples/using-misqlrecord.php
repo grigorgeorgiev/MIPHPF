@@ -32,3 +32,8 @@ catch (miDBException $exception)
 {
     // Error handling here ...
 }
+
+//* Reading a record by any key example:
+
+$sqlRecord = new miSqlRecord('CustomerEmail', 'test123@gmail.com');
+$sqlRecord->read($key, $value);
