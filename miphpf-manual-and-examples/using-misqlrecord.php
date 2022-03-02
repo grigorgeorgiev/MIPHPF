@@ -37,3 +37,16 @@ catch (miDBException $exception)
 
 $sqlRecord = new miSqlRecord('CustomerEmail', 'test123@gmail.com');
 $sqlRecord->read($key, $value);
+
+//* Inserting new record example:
+try{
+    $sqlRecord = new miSqlRecord('Customers', 'CustomerID');
+    $sqlRecord->set('CustomerGroupID', '1');
+    $sqlRecord->set('CustomerEmail', 'test987654321@test.bg');
+    $id = $sqlRecord->insert();
+    var_dump($id);
+}
+
+catch (miDBException $e){
+    var_dump($e);
+}
