@@ -39,6 +39,7 @@ $sqlRecord = new miSqlRecord('CustomerEmail', 'test123@gmail.com');
 $sqlRecord->read($key, $value);
 
 //* Inserting new record example:
+//If the table has "auto increment" key, the newly created id is returned by the insert method.
 try{
     $sqlRecord = new miSqlRecord('Customers', 'CustomerID');
     $sqlRecord->set('CustomerGroupID', '1');
