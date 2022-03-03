@@ -51,3 +51,9 @@ try{
 catch (miDBException $e){
     var_dump($e);
 }
+
+//* Updating a record example:
+$sqlRecord = new miSqlRecord('Customers', 'CustomerID');
+$sqlRecord->readPK(6);
+$sqlRecord->set('CustomerEmail', 'test321@gmail.com');
+$sqlRecord->update();
