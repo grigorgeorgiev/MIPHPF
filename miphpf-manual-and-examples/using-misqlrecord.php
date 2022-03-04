@@ -57,3 +57,8 @@ $sqlRecord = new miSqlRecord('Customers', 'CustomerID');
 $sqlRecord->readPK(6);
 $sqlRecord->set('CustomerEmail', 'test321@gmail.com');
 $sqlRecord->update();
+
+//* Deleting a record example:
+$sqlRecord = new miSqlRecord('Customers', 'CustomerID');
+$sqlRecord->set('CustomerID', '6');  // or read() the record from the DB
+$sqlRecord->delete();
