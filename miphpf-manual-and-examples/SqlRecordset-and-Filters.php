@@ -3,3 +3,8 @@
 //Get all records:
 $recordset = new miSqlRecordset('Customers');
 $records = $recordset->getAllRecords();
+
+//Using filters:
+$recordset = new miSqlRecordset('Contacts');
+$recordset->addFilter(new miSqlFilterEqual('ContactName', 'John Smith'));
+$recordset->getAllRecords();
