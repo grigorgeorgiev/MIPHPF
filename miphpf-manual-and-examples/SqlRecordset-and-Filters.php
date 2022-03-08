@@ -3,6 +3,31 @@
 //Get all records:
 $recordset = new miSqlRecordset('Customers');
 $records = $recordset->getAllRecords();
+//$records
+// Array
+// (
+//     [0] => Array
+//         (
+//             [CountryID] => 3
+//             [CountryCode2] => AL
+//             [CountryCode3] => ALB
+//             [CountryRequireValidCity] => 0
+//             [CountryAddressFormat] => 0
+//             [LanguageCode] => 
+//             [CurrencyCode] => 
+//         )
+
+//     [1] => Array
+//         (
+//             [CountryID] => 4
+//             [CountryCode2] => DZ
+//             [CountryCode3] => DZA
+//             [CountryRequireValidCity] => 0
+//             [CountryAddressFormat] => 0
+//             [LanguageCode] => 
+//             [CurrencyCode] => 
+//         )
+
 
 //Using filters:
 $recordset = new miSqlRecordset('Contacts');
