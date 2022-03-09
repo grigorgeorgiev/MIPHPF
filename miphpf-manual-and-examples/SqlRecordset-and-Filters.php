@@ -34,6 +34,11 @@ $recordset = new miSqlRecordset('Contacts');
 $recordset->addFilter(new miSqlFilterEqual('ContactName', 'John Smith'));
 $recordset->getAllRecords();
 
-//in two tables example:
+//Join two tables example:
 $recordset = new miSqlRecordset('Contacts');
 $recordset->addJoinCondition('INNER', 'Users', 'ON Users.UserID = Contacts.UserID');
+
+//Get the number of records and retrieve the last 10:
+$recordset = new miSqlRecordset('Contacts');
+$numRecords = $recordset->getRecordsCount();
+$records = $recordset->getRecordsByIndex($numRecords-10, 10);
