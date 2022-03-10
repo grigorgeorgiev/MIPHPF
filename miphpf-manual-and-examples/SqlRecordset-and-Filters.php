@@ -42,3 +42,9 @@ $recordset->addJoinCondition('INNER', 'Users', 'ON Users.UserID = Contacts.UserI
 $recordset = new miSqlRecordset('Contacts');
 $numRecords = $recordset->getRecordsCount();
 $records = $recordset->getRecordsByIndex($numRecords-10, 10);
+
+
+//ternative way to retrieve specific records:
+$recordset = new miSqlRecordset('Contacts');
+$recordset->setRecordsLimit(10, 5);  // Retrieve 5 records, starting from 10th
+$records = $recordset->getRecords();
