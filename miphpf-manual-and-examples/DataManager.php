@@ -46,3 +46,38 @@ class UserDataManager extends miDataManager
         return new UserCreateDomainObject($record);
     }
 }
+
+
+// Note: It is recommended that domain objects are created through factory class.
+// 2. Customize table
+// To initialize the table, when listing records, override the initTable() method.
+// * Example
+class UserDataManager extends miDataManager
+{
+    // Set the templates location
+    protected $_templates = array(
+        self::TEMPLATE_ID_CREATE => 'public/user/user_create.tmpl'
+    );
+   
+    // Map the page fields
+    protected $_dataFields = array(
+        array(
+            'field' => 'miWebFormWidgetText',
+            'data' => 'UserLogin',
+        ),
+        array(
+            'field' => 'WebFormWidgetCreatePassword',    // Use custom widget class
+            'data' => 'UserPassword',
+        )
+    );
+   
+    public function initTable(miTable $table)
+    {
+        // Initialize the default behaiviour of the table
+        parent::initTable($table);
+       
+        // Create table pager with records per page manager
+        $pager = new miTablePager($table);
+        new miTableRecordsPerPage($table, $pager);
+    }
+}
